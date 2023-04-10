@@ -3,14 +3,14 @@ gapi.load('client', function() {
 
     // Initialize the YouTube API client
     gapi.client.init({
-      apiKey: 'AIzaSyCyfAqW6DAjR9y0xRwCKhRka_uDGBYL4AM',  //AIzaSyCyfAqW6DAjR9y0xRwCKhRka_uDGBYL4AM
+      apiKey: 'YOUR_API_KEY',  
       discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest']
     }).then(function() {
       
       // Retrieve the description for the video
       gapi.client.youtube.videos.list({
         part: 'snippet',
-        id: 'mtnWZ4ZtDos'
+        id: 'YOUR_VIDEO_ID'
       }).then(function(response) {
         
         // Extract the description from the response
