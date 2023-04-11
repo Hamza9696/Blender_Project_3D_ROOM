@@ -331,8 +331,7 @@
 				<div class="column">
 					<div>
 						<h3>Ajout Camera (Append)  </h3><br>
-						<div class="break-after-dot">
-						<div id="description"></div></div><br>
+						<p id="description"></p><br>
 						<!-- <p>Instruments: array modifier, extrusion, parentage.</p> <br> -->
 						<a href="blender/11- Night scene_render_camera.blend">Fichier Blender</a>
 					</div>
@@ -344,5 +343,11 @@
 				</div>
 				
 	</div>
+	<script>
+		var paragraph = document.getElementById("description");
+		var text = paragraph.innerHTML;
+		var newText = text.replace(/(\.)/g, "$1<br>");
+		paragraph.innerHTML = newText;
+	</script>
 </body>
 </html>

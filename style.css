@@ -15,10 +15,11 @@
 	text-align: center;
 } */
 
-.break-after-dot {
-    word-wrap: break-word;
-  }
 
+
+  p {
+	white-space: pre-wrap;
+}
 #ar{
 	z-index: -2;
 	border-radius: 2%;
